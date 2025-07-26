@@ -1,0 +1,110 @@
+.recom{
+    display: grid;
+    grid-template-areas:
+    "satu dua tiga"
+    ;
+    /* ukuran templet */
+    grid-template-columns: 35% 30% 35%;
+    gap: 10px;
+    background: linear-gradient(to right, #bbd2c5, #536976, #292e49);
+}
+.kedua h1{
+    background-color: #536976;
+    color: white;
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+th{
+    color: white;
+}
+
+.kartu h3{
+    text-align: center;
+}
+.kartu{
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 4px 5px 10px;
+}
+
+.satu{
+    grid-area: satu;
+}
+
+.dua{
+    grid-area: dua;
+}
+
+.tiga{
+    grid-area: tiga;
+}
+.fiksi{
+    display: grid;
+    grid-template-areas: 
+    "fiksi . ."
+    "satu dua tiga";
+    background: linear-gradient(to right, #bbd2c5, #536976, #292e49);
+    
+}
+
+.fiksi h2{
+    grid-area: fiksi;
+}
+
+.harry{
+    grid-area: satu;
+}
+.the{
+    grid-area: dua;
+}
+.percy{
+    grid-area: tiga;
+}
+
+.kedua img{
+    object-fit: contain;
+    height: 150px;
+    width: 100%;
+}
+.non{
+    display: grid;
+    grid-template-areas: 
+    "non . ."
+    "satu dua tiga"; 
+    background:linear-gradient(to right,#292e49,#536976, #bbd2c5);
+}
+.atomic{
+    grid-area: satu;
+}
+.filosofi{
+    grid-area: dua;
+}
+.out{
+    grid-area: tiga;
+}
+.ringan{
+    display: grid;
+    grid-template-areas: 
+    "gratis . ."
+    "satu dua tiga"; 
+    background: linear-gradient(to right, #bbd2c5, #536976, #292e49);
+}
+.nkcthi{
+    grid-area: satu;
+} 
+.super{
+    grid-area: dua;
+}
+.gila{
+    grid-area: tiga;
+}
+.recom a{
+    text-decoration: none;
+}

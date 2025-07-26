@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+header img{
+    filter: blur(0) contrast(80%) brightness(100%);
+}
+
+nav ul{
+    /* flex = untuk edit hyper link */
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin-right: 15px;
+    float: left;
+}
+nav{
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to right, #bbd2c5, #536976);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.info{
+    padding: 5px;
+    margin-bottom:10px ;
+    box-shadow: 4px 5px 10px;
+    display: grid;
+    grid-template-areas:
+    ". satu ."
+    
+    ;
+    grid-template-columns: 25% 50% 25%;
+    background: linear-gradient(to right, #bbd2c5, #536976, #292e49);
+    
+}
+.satu{
+    grid-area: satu;
+}
+.baca{
+    object-fit: contain;
+    height: 100px;
+    width: 150px;
+}
+
+
+.info img{
+    width: 100%;
+}
+.article{
+    display: grid;
+    grid-template-areas:
+    "satu kanan3"
+    "dua  kanan"
+    "tiga kanan1"
+    "empat kanan2" ;
+    grid-template-columns: 70% 30%;
+    gap: 10px;
+    background: linear-gradient(to right, #292e49, #536976,   #bbd2c5);
+    
+}
+b{
+    color: white;
+}
+.duaA{
+    padding: 15px;
+    grid-area: kanan2;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 10px;
+    grid-area: kanan3;
+}
+.design{
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 4px 5px 10px;
+
+}
+
+.design h1{
+    padding: 10px;
+}
+
+.satu{
+    grid-area: satu;
+}
+.dua{
+    grid-area: dua;
+}
+.tiga{
+    grid-area: tiga;
+}
+.empat{
+    grid-area: empat;
+}
+
+.tokoh{
+    grid-area: kanan;
+}
+
+.fb{
+    padding: 15px;
+    grid-area: kanan1;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 10px;
+}
+
+.habibi{
+    padding: 15px;
+    grid-area: kanan;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 10px;
+}
+
+.hatta{
+    padding: 15px;
+    grid-area: kanan2;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 10px;
+}
+
+.article img{
+    width: 100%;
+    object-fit: contain;
+    height: 200px;
+}
+
+.duaA a{
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+    background: linear-gradient(to right, #bbd2c5, #536976);
+    padding: 20px;
+}
+footer p{
+    font-family:fantasy;
+}
+
+.kedua h1{
+    padding: 10px;
+}
+
+.kedua h2{
+    padding: 15px;
+}
+/* TAMPILAN DI HANDPHONE */
+@media screen and (max-width: 767.98px) {
+    .article{
+        display: grid;
+        grid-template-areas:
+        "satu"
+        "dua"
+        "tiga"
+        "empat"
+        "kanan"
+        "kanan1"
+        "kanan2"
+        ;
+        grid-template-columns:100%;
+        gap: 10px;
+    }
+}
